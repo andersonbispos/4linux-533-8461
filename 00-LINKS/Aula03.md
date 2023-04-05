@@ -1,16 +1,22 @@
 #### ALTERANDO O PÁGINA INICIAL DO NGINX
 
+
+- instalar o nginx:
+``sh
+sudo apt update; sudo apt install -y nginx
+``
+
 - nginx em us-east1-b
 
 ``sh
 sudo sed -i 's/nginx!/nginx-us-east1-b/g' /var/www/html/index.nginx-debian.html
-``sh
+``
 
 - nginx em us-east1-c 
 
 ``sh
 sudo sed -i 's/nginx!/nginx-us-east1-c/g' /var/www/html/index.nginx-debian.html
-``sh
+``
 
 
 #### OBTENDO PERMISSÕES NECESSÁRIAS PARA O TERRAFORM USER:

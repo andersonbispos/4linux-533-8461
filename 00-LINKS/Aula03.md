@@ -1,3 +1,18 @@
+#### ALTERANDO O PÁGINA INICIAL DO NGINX
+
+- nginx em us-east1-b
+
+``sh
+sudo sed -i 's/nginx!/nginx-us-east1-b/g' /var/www/html/index.nginx-debian.html
+``sh
+
+- nginx em us-east1-c 
+
+``sh
+sudo sed -i 's/nginx!/nginx-us-east1-c/g' /var/www/html/index.nginx-debian.html
+``sh
+
+
 #### OBTENDO PERMISSÕES NECESSÁRIAS PARA O TERRAFORM USER:
 
 Para garantir que seu Terraform consiga realizar a criação de todos recursos contidos neste projeto, recomendo a criação de um usuário (ex.: `tfadmin`), e garanta que ele possua as seguintes permissões, do contrário, permita apenas acesso aos resources que deseja provisionar.

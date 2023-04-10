@@ -129,6 +129,15 @@ export AWS_SECRET_ACCESS_KEY="asecretkey"
 export AWS_REGION="us-east-1"
 EOF
 ```
+
+```sh
+#
+# EXPORTING PROVIDER AWS VARS INTO PROFILE ON WINDOWS
+#
+set AWS_ACCESS_KEY_ID="anaccesskey"
+set AWS_SECRET_ACCESS_KEY="asecretkey"
+set AWS_REGION="us-east-1"
+```
 ---
 
 #### COMANDOS DE REFERENCIA

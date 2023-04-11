@@ -1,8 +1,6 @@
-resource "aws_security_group" "sg_vpc_terraform" {
-  name        = "sg_vpc_terraform"
+/* resource "aws_security_group" "allow_default_ports" {
+  name        = "allow_default_ports"
   description = "Allow default inbound traffic"
-
-  
 
   ingress {
     description = "Allow ICMP"
@@ -29,6 +27,6 @@ resource "aws_security_group" "sg_vpc_terraform" {
   }
 
   tags = {
-    Name = "sg_vpc_terraform"
+    Name = "allow_default_ports"
   }
-}
+} */

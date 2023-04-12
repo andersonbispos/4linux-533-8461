@@ -1,4 +1,4 @@
-/* resource "aws_security_group" "allow_default_ports" {
+resource "aws_security_group" "allow_default_ports" {
   name        = "allow_default_ports"
   description = "Allow default inbound traffic"
 
@@ -29,4 +29,4 @@
   tags = {
     Name = "allow_default_ports"
   }
-} */
+}

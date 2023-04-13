@@ -13,7 +13,7 @@ resource "aws_instance" "web_vpc_terraform" {
     Name = "web_vpc_terraform"
   }
 
-  user_data = base64encode("#!/bin/bash\n yum install nginx -y")
+  user_data = base64encode("#!/bin/bash\n sudo yum install nginx -y; sudo systemctl enable nginx; sudo systemctl start nginx")
 
   depends_on = [
     aws_instance.db_vcp_terraform,

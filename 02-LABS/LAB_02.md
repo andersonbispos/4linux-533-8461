@@ -22,7 +22,7 @@ Caso haja qualquer erro, leia atentamente o terminal.
 
 3. Crie o código de uma subnet1 com faixa **192.168.10.0/24**, na zona **sa-east-1b** vinculada a vpc: tf-vpc-lab. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
 
-4. Crie o código de uma subnet2 com faixa **192.168.20.0/24**, na zona **-east-1c** vinculada a vpc: tf-vpc-lab. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
+4. Crie o código de uma subnet2 com faixa **192.168.20.0/24**, na zona **sa-east-1c** vinculada a vpc: tf-vpc-lab. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
 
 5. Crie um security group com o nome 'allow-default-ports' liberando o protocolo icmp e a porta 80 para 0.0.0.0/0, na rede tf-vpc-lab. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
 
@@ -34,7 +34,7 @@ Caso haja qualquer erro, leia atentamente o terminal.
 
 **- Na segunda parte do LAB** será criado um disco pra dados que vai ser apresentando a instancia de db e duas instâncias de webserver que devem ter uma referência explicita ao servidor dbserver1.
 
-9. Crie o código de um disco de 30 gigas, do tipo **gp3** com nome: **dados**, na zona **us-east-1c**. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
+9. Crie o código de um disco de 30 gigas, do tipo **gp3** com nome: **dados**, na zona **sa-east-1c**. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
 
 10. Crie o código de uma nova instância, com o nome dbserver1, na subnet2, com um **ip público efêmero** e com o **disco `dados` atachado a ela**. Use a image: `ubuntu 22.04`. Rode apenas o validate e o plan, não aplique a infraestrutura ainda.
 

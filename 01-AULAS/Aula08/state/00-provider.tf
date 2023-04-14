@@ -13,7 +13,7 @@ provider "aws" {
   #secret_key = ""
   default_tags {
     tags = {
-      environment = "aula"
+      environment = "aula9"
       treina      = "4linux"
       terraform   = "yes"
     }

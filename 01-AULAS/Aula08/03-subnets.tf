@@ -9,7 +9,7 @@ resource "aws_subnet" "subnet_terraform_east_1b" {
   }
 }
 
-resource "aws_subnet" "subnet_terraform_east_1c" {
+/* resource "aws_subnet" "subnet_terraform_east_1c" {
   vpc_id     = aws_vpc.vpc_terraform.id
   cidr_block = "10.0.2.0/24"
 
@@ -18,4 +18,4 @@ resource "aws_subnet" "subnet_terraform_east_1c" {
   tags = {
     Name = "subnet_terraform_east_1c"
   }
-}
+} */

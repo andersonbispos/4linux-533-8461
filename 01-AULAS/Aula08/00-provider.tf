@@ -5,6 +5,16 @@ terraform {
       version = "4.61.0"
     }
   }
+
+  backend "s3" {
+    bucket = "state-bucket-absv-2023"
+    key    = "prod"
+    region = "us-east-1"
+    dynamodb_table = "terraform-lock"
+    #access_key = ""
+    #secret_key = ""
+  }
+
 }
 
 provider "aws" {

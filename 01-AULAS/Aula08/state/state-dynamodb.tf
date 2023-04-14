@@ -10,6 +10,6 @@ resource "aws_dynamodb_table" "dynamodb_table_state" {
   }
 
   tags = {
-    Name        = "dynamodb_table_state"
+    Name = "dynamodb_table_state"
   }
 }

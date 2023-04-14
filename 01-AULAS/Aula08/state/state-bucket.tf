@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "state_bucket" {
-  bucket = "absv_state_bucket"
+  bucket = "state-bucket-absv-2023"
 
   force_destroy = true
 

@@ -11,6 +11,8 @@
     default = "us-east-1"
 } */
 
+## dados vpc
+
 variable "vpc_cidr" {
     description = "Bloco CIDR para ser utilizado ao criar uma VPC"
     type = string
@@ -22,6 +24,8 @@ variable "vpc_name" {
     type = string
     default = "vpc_terraform"
 }
+
+## dados subnets
 
 variable "subnet1_cidr" {
     description = "Bloco CIDR da subnet1"

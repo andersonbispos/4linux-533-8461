@@ -18,6 +18,10 @@ resource "aws_subnet" "subnet2" {
   vpc_id = aws_vpc.vpc_terraform.id
 
   //usando variaveis individuais
+  //availability_zone = var.subnet2_zona
+  // cidr_block = var.subnet2_cidr
+
+  //usando lista
   availability_zone = var.subnet_zones[1]
   cidr_block = var.subnet_faixas[1]
 

@@ -57,7 +57,32 @@ variable "subnet2_zona" {
   default     = "us-east-1c"
 }
 
+## dados do disco
+
+/* variable "db_disk_prefix_name" {
+  description = "Prefixo a ser utilizado no nome da instance"
+  type        = string
+  default     = var.db_prefix_name # <- nao eh possivel atribuir o valor de uma variavel a outra variavel
+} */
+
+variable "db_disk_size" {
+  description = "Tamanho do disco de banco"
+  type        = number
+  default     = 10
+
+  validation {
+    condition     = var.db_disk_size <= 50
+    error_message = "O disco deve ser de no maximo 50 GB"
+  }
+}
+
 ## dados das instancias
+
+variable "db_prefix_name" {
+  description = "Prefixo a ser utilizado no nome da instance"
+  type        = string
+  default     = "db1"
+}
 
 variable "web_prefix_name" {
   description = "Prefixo a ser utilizado no nome da instance"

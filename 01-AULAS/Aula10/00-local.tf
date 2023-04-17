@@ -7,4 +7,6 @@ locals {
     treina      = "4linux"
     terraform   = "yes"
   }
+
+  db_disk_prefix_name = var.db_prefix_name
 }

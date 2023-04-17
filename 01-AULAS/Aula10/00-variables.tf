@@ -5,11 +5,11 @@
 //*.auto.tfvars
 //terraform plan -var="vpc_cidr=192.168.50.0/25"
 
-variable "default_region" {
+/* variable "default_region" {
     description = "Regiao padrao para provisionar ambientes"
     type = string
     default = "us-east-1"
-}
+} */
 
 variable "vpc_cidr" {
     description = "Bloco CIDR para ser utilizado ao criar uma VPC"
@@ -18,7 +18,31 @@ variable "vpc_cidr" {
 }
 
 variable "vpc_name" {
-    description = "Bloco CIDR para ser utilizado ao criar uma VPC"
+    description = "Nome da VPC"
     type = string
-    default = "10.0.0.0/16"
+    default = "vpc_terraform"
+}
+
+variable "subnet1_cidr" {
+    description = "Bloco CIDR da subnet1"
+    type = string
+    default = "10.0.1.0/24"
+}
+
+variable "subnet1_zona" {
+    description = "Zona da subnet1"
+    type = string
+    default = "us-east-1b"
+}
+
+variable "subnet2_cidr" {
+    description = "Bloco CIDR da subnet2"
+    type = string
+    default = "10.0.2.0/24"
+}
+
+variable "subnet2_zona" {
+    description = "Zona da subnet2"
+    type = string
+    default = "us-east-1c"
 }

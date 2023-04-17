@@ -11,5 +11,5 @@ resource "aws_instance" "web1" {
     Name = format("%s-%s", var.web_prefix_name, var.vpc_name)
   }
 
-  user_data = local.install_nginx
+  user_data = base64encode("#!/bin/bash\n sudo yum install nginx -y; sudo systemctl enable nginx; sudo systemctl start nginx")
 }

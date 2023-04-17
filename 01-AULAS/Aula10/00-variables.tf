@@ -56,3 +56,35 @@ variable "subnet2_zona" {
   type        = string
   default     = "us-east-1c"
 }
+
+## dados das instancias
+
+variable "web_prefix_name" {
+  description = "Prefixo a ser utilizado no nome da instance"
+  type        = string
+  default     = "web"
+}
+
+variable "ami_amazon" {
+  description = "Imagem Amazo Linux a ser utilizada na criacao da instancia WEB"
+  type        = string
+  default     = "ami-06e46074ae430fba6"
+}
+
+variable "ami_ubuntu" {
+  description = "Imagem a ser utilizada na criacao da instancia WEB"
+  type        = string
+  default     = "ami-06e46074ae430fba6"
+}
+
+variable "web_size" {
+  description = "Tamanho a ser utilizado na criacao da instancia WEB"
+  type        = string
+  default     = "t2.micro"
+}
+
+variable "associate_public_ip" {
+  description = "Define se a instancia deve ter ip publico"
+  type        = bool
+  default     = true
+}

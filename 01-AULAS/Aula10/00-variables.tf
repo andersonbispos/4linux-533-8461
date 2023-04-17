@@ -60,14 +60,33 @@ variable "subnet2_zona" {
 variable "subnet_zones" {
   description = "Bloco CIDR das subnets"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  default     = ["us-east-1a", "us-east-1b"]
 }
 
 variable "subnet_faixas" {
   description = "Bloco CIDR das subnets"
   type        = list(string)
-  default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  default     = ["10.0.1.0/24", "10.0.2.0/24"]
 }
+
+variable "map_subnet_faixas" {
+  description = "Definicoes subnet"
+  type = map(string)
+  default = {
+    subnet0 = "10.0.1.0/24"
+    subnet1 = "10.0.2.0/24"
+  }
+}
+
+variable "map_subnet_zones" {
+  description = "Definicoes subnet"
+  type = map(string)
+  default = {
+    subnet0  = "us-east-1a"
+    subnet1  = "us-east-1b"
+  }
+}
+
 
 ## dados do disco
 

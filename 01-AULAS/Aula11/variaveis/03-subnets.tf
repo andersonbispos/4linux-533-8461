@@ -1,6 +1,6 @@
 resource "aws_subnet" "subnets" {
 
-  count = 2
+  count = length(var.subnet_zones)
 
   vpc_id = aws_vpc.vpc_terraform.id
 

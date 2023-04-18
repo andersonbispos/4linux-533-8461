@@ -12,12 +12,12 @@ resource "aws_subnet" "subnet1" {
 }
 
 resource "aws_instance" "vm1" {
-  ami               = "ami-06e46074ae430fba6" # <- amazonl linux us-east1
-  instance_type     = "t2.micro"
+  ami           = "ami-06e46074ae430fba6" # <- amazonl linux us-east1
+  instance_type = "t3a.micro"
 
   subnet_id = aws_subnet.subnet1.id
 
-  vpc_security_group_ids = [ module.rede.sg_id ]
+  vpc_security_group_ids = [module.rede.sg_id]
 
   tags = {
     Name = "vm1"

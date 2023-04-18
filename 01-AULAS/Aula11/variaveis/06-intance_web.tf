@@ -1,4 +1,4 @@
-resource "aws_instance" "web1" {
+/* resource "aws_instance" "web1" {
   ami           = var.ami_amazon
   instance_type = var.web_size
 
@@ -12,4 +12,4 @@ resource "aws_instance" "web1" {
   }
 
   user_data = base64encode("#!/bin/bash\n sudo yum install nginx -y; sudo systemctl enable nginx; sudo systemctl start nginx")
-}
+} */

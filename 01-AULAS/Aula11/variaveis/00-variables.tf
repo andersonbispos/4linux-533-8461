@@ -60,7 +60,7 @@ variable "subnet2_zona" {
 variable "subnet_zones" {
   description = "Bloco CIDR das subnets"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b","us-east-1c"]
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
   /* default     = ["us-east-1a"] */
 }
 
@@ -85,6 +85,15 @@ variable "map_subnet_zones" {
   default = {
     subnet0 = "us-east-1a"
     subnet1 = "us-east-1b"
+  }
+}
+
+variable "map_subnet_defs" {
+  description = "Definicoes subnet"
+  type        = map(string)
+  default = {
+    us-east-1a = "10.0.1.0/24"
+    us-east-1b = "10.0.2.0/24"
   }
 }
 

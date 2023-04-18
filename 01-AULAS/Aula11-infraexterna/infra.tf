@@ -1,5 +1,5 @@
 module "rede" {
-  source = "github.com/andersonbispos/4linux-533-8461//01-AULAS/Aula11/modulos/vpc"
+  source = "git::https://github.com/andersonbispos/4linux-533-8461.git//01-AULAS/Aula11/modulos/vpc"
 
   vpc_cidr = "192.168.10.0/24"
 }

@@ -71,7 +71,7 @@ variable "subnet_faixas" {
 
 variable "map_subnet_faixas" {
   description = "Definicoes subnet"
-  type = map(string)
+  type        = map(string)
   default = {
     subnet0 = "10.0.1.0/24"
     subnet1 = "10.0.2.0/24"
@@ -80,10 +80,10 @@ variable "map_subnet_faixas" {
 
 variable "map_subnet_zones" {
   description = "Definicoes subnet"
-  type = map(string)
+  type        = map(string)
   default = {
-    subnet0  = "us-east-1a"
-    subnet1  = "us-east-1b"
+    subnet0 = "us-east-1a"
+    subnet1 = "us-east-1b"
   }
 }
 

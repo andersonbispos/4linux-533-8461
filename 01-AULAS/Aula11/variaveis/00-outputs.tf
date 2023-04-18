@@ -1,5 +1,8 @@
 // exemplo de output usando map + for_each:
-
+output "subnet_ids" {
+  description = "IDs das subnets criadas."
+  value       = values(aws_subnet.subnets)[*].id
+}
 
 // exemplo de output usando count + list:
 
@@ -13,7 +16,7 @@ output "subnet_ids" {
   value       = aws_subnet.subnets[*].id
 } */
 
-/* output "web_private_ip" {
+output "web_private_ip" {
   description = "The private IP address of the main server instance."
   value       = aws_instance.web1.private_ip
 }
@@ -21,4 +24,4 @@ output "subnet_ids" {
 output "web_public_ip" {
   description = "The private IP address of the main server instance."
   value       = aws_instance.web1.public_ip
-} */
+}

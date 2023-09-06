@@ -18,7 +18,7 @@ Caso haja qualquer erro, leia atentamente o terminal.
 
 2. Crie o código para uma nova VPC (nome sugerido: vpc-lab01). *Valide*, *planeje* e *aplique* as alterações.
 
-3. Crie o código para um volume de persistente de 10GB, do tipo **gp3**. *Valide*, *planeje* e *aplique* as alterações. (dica: consulte na documentação da GCP os tipos existentes de disco e como referenciar o tipo balanceado)
+3. Crie o código para um volume de persistente de 10GB, do tipo **gp3**. *Valide*, *planeje* e *aplique* as alterações. 
 
 4. Valide na console da AWS a criação dos itens até aqui. 
 
